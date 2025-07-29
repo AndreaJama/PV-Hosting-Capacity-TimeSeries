@@ -56,3 +56,6 @@ df_results = pd.DataFrame(results)
 end = time.time()  # End of simulation time
 
 print('\n Simulation time = ' + str(round(((end - start) / 60), 2)) + ' minutes')
+
+df_results.to_csv("simulation_results.csv", index=False)
+
