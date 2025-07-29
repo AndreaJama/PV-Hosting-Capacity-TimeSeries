@@ -47,8 +47,8 @@ This simulator:
 
 ---
 
-## 🚀 Getting Started
+## 🚀 Requirements
 
-1. Clone this repository:
-   ```bash
-   git clone https://github.com/your-username/ieee123-powerflow-simulator.git
+### Core Software
+- [OpenDSS](https://sourceforge.net/projects/electricdss/) (Distribution System Simulator)
+- [Python 3.7.9](https://www.python.org/downloads/release/python-379/)
