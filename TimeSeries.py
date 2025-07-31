@@ -16,7 +16,7 @@ day = 'SOL'
 start = time.time()
 
 location = 1
-NPFV_percentage = 100
+NPFV_percentagem = 100
 hours = list(range(1, 25))
 
 # List to store results for each hour
@@ -28,12 +28,12 @@ for hour in hours:
     # Run power flow for each hour
     num_OV, num_UV, num_SC, num_DT, buses_voltages, voltages_abc_pu, v_max, v_min, total_pv_p, total_pv_q, \
         total_losses_p_kw, total_p_kw, total_q_kvar, total_pv_p_dict, total_pv_q_dict = \
-        fluxo.compile_fluxo(dss, dss_file, day, hour, curves_file, location, NPFV_percentage)
+        fluxo.compile_fluxo(dss, dss_file, day, hour, curves_file, location, NPFV_percentagem)
 
     # Store hourly data as a list of dictionaries
     results.append({
         "Location": location,
-        "NPFV": NPFV_percentage,
+        "NPFV": NPFV_percentagem,
         "Hour": hour,
         "V_max": v_max,
         "V_min": v_min,
